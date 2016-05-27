@@ -32,6 +32,7 @@ class TabBar extends Component {
   }
   onTabSelect(tab: Tab,tabVC:TabVC) {
   if (this.state.selectedTab !== tab) {
+    this.props.navigator.title == tab;
     this.setState({
       selectedTab: tab,
       tabVC:tabVC,
